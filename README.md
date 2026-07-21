@@ -68,7 +68,7 @@ streamlit run main.py
 
 ## 📸 Screenshot
 
-![RAG Application]()
+![RAG Application](screenshoots/app.png)
 
 
 
