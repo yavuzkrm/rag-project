@@ -1,5 +1,7 @@
-streamlit>=1.59.2
+streamlit>=1.58
 chromadb>=1.5.9
-ollama>=0.32.1
+ollama>=0.6
 langchain-community>=0.4.2
 langchain-text-splitters>=1.1.2
+pypdf>=6.0
+docx2txt>=0.9

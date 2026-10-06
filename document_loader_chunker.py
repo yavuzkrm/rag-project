@@ -12,7 +12,8 @@ def load_and_chunk_documents(existing_sources):
     docx_loader = DirectoryLoader(DATA_PATH, glob="**/*.docx", loader_cls=Docx2txtLoader)
     all_documents.extend(docx_loader.load())
 
-    txt_loader = DirectoryLoader(DATA_PATH, glob="**/*.txt", loader_cls=TextLoader)
+    txt_loader = DirectoryLoader(DATA_PATH, glob="**/*.txt", loader_cls=TextLoader,
+                                 loader_kwargs={"encoding": "utf-8", "autodetect_encoding": True})
     all_documents.extend(txt_loader.load())
 
     filtered_documents = []
