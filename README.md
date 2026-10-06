@@ -1,4 +1,4 @@
-# 📚 Personal Knowledge Base — Local RAG Assistant
+# Personal Knowledge Base — Local RAG Assistant
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
@@ -11,7 +11,7 @@ A **Retrieval-Augmented Generation (RAG)** chat application that lets you upload
 
 ![RAG Application](screenshots/app.png)
 
-## ✨ Features
+## Features
 
 - **Multi-format ingestion**: upload PDF, DOCX and TXT files from the sidebar
 - **Incremental indexing**: only new files are chunked and embedded. Files that are already indexed are skipped on later runs.
@@ -22,7 +22,7 @@ A **Retrieval-Augmented Generation (RAG)** chat application that lets you upload
 - **Source attribution**: each answer shows the documents it was based on
 - **Conversation memory**: chat history is passed to the model for follow-up questions
 
-## 🧠 How It Works
+## How It Works
 
 ```mermaid
 flowchart LR
@@ -42,7 +42,7 @@ flowchart LR
 4. **Retrieve**: the user's question is embedded and the 3 most similar chunks are retrieved.
 5. **Generate**: the chunks, the chat history and the question are sent to the local LLM, which writes a grounded answer.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer           | Technology                               |
 | --------------- | ---------------------------------------- |
@@ -52,7 +52,7 @@ flowchart LR
 | Vector store    | ChromaDB (persistent client)             |
 | LLM             | Llama 3.2 served locally via Ollama      |
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 rag-project/
@@ -66,7 +66,7 @@ rag-project/
 └── requirements.txt
 ```
 
-## ▶️ Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -103,7 +103,7 @@ The app opens at `http://localhost:8501`. On first launch, all documents in `dat
 
 > **Note:** On first run, ChromaDB downloads its default embedding model (`all-MiniLM-L6-v2`, ~80 MB). The user interface is in Turkish.
 
-## ⚙️ Configuration
+## Configuration
 
 | Setting                | Location                     | Default     |
 | ---------------------- | ---------------------------- | ----------- |
@@ -115,6 +115,6 @@ The app opens at `http://localhost:8501`. On first launch, all documents in `dat
 
 To start over with a fresh index, delete the `chroma_db/` folder.
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
