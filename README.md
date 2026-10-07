@@ -44,13 +44,14 @@ flowchart LR
 
 ## Tech Stack
 
-| Layer           | Technology                               |
-| --------------- | ---------------------------------------- |
-| UI              | Streamlit                                |
-| Document loading | LangChain (`PyPDFLoader`, `Docx2txtLoader`, `TextLoader`) |
-| Chunking        | LangChain `RecursiveCharacterTextSplitter` |
-| Vector store    | ChromaDB (persistent client)             |
-| LLM             | Llama 3.2 served locally via Ollama      |
+| Layer            | Technology                                                 |
+| ---------------- | ---------------------------------------------------------- |
+| UI               | Streamlit                                                  |
+| Document loading | LangChain (`PyPDFLoader`, `Docx2txtLoader`, `TextLoader`)  |
+| Chunking         | LangChain `RecursiveCharacterTextSplitter`                 |
+| Embeddings       | ChromaDB's default embedding model (`all-MiniLM-L6-v2`, runs locally) |
+| Vector store     | ChromaDB (persistent client)                               |
+| LLM              | Llama 3.2 served locally via Ollama                        |
 
 ## Project Structure
 
